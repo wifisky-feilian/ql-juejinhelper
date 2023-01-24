@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #依赖安装，运行一次就好
-#0 8 5 5 * jd_indeps.sh
+#0 8 5 5 * juejin_indeps.sh
 #new Env('依赖安装');
 #
 
@@ -17,6 +17,8 @@ echo -e "开始安装............\n"
 apk add g++ make --no-cache
 pnpm config set registry https://registry.npm.taobao.org
 pnpm install -g
+pnpm install -g fast-astar@1.0.6
+pnpm install -g juejin-helper@1.7.1
 pnpm install -g ds
 pnpm install -g png-js
 pnpm install -g date-fns
